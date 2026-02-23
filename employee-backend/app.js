@@ -8,7 +8,7 @@ const taskRoutes = require('./routes/taskRoutes');
 const app = express();
 
 app.use(cors({
-    origin: 'https://employee-data-frontend-81vb.onrender.com',
+    origin: ['https://employee-data-frontend-81vb.onrender.com', 'http://localhost:5173', 'http://localhost:5174'],
     credentials: true
 }));
 app.use(express.json());
